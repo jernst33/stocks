@@ -1,0 +1,15 @@
+<form [formGroup]="createStockForm">
+  <mat-form-field>
+    <mat-label>Symbol</mat-label>
+    <input matInput placeholder="Symbol" formControlName="symbol">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Number of Shares</mat-label>
+    <input matInput placeholder="Number of Shares" formControlName="numShares">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Price Per Share</mat-label>
+    <input matInput placeholder="Price Per Share" formControlName="ppsPaid">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSubmit()">Create Stock</button>
+</form>
